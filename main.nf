@@ -1180,20 +1180,19 @@ workflow {
     //ch_multiqc_files.view()
     
     QCREPORT(ch_multiqc_files.collect())
-    //QCREPORT(QUAL_TRIMMING_AND_QC.out.cutadapt_qual_filt_results.collect().ifEmpty([]),
-    //  QUAL_TRIMMING_AND_QC.out.fastp_results.collect().ifEmpty([]),
-    //  QUAL_TRIMMING_AND_QC.out.read_length_dist_results.collect().ifEmpty([]),
-    //  DERIVE_USABLE_READS.out.cutadapt_18_25nt_results.collect().ifEmpty([]),
-    //  DERIVE_USABLE_READS.out.cutadapt_21_22nt_results.collect().ifEmpty([]),
-    //  DERIVE_USABLE_READS.out.cutadapt_24nt_results.collect().ifEmpty([]),
-    //  DERIVE_USABLE_READS.out.bowtie_usable_read_results.collect().ifEmpty([]),
-    //  ADAPTER_TRIMMING.out.umi_tools_results.collect().ifEmpty([]))
-    DENOVO_ASSEMBLY(DERIVE_USABLE_READS.out.usable_reads)
-    } else {
-    // If user does not specify qualityfilter parameter, then only read size selection (using the minlen and maxlen params specified in the nextflow.config file) will be performed on the fastq file specified in the index file
-    READPROCESSING(read_size_selection_ch)
+
+    if (params.virreport_viral_db || params.virreport_ncbi) {
+      DENOVO_ASSEMBLY(DERIVE_USABLE_READS.out.usable_reads)
+    }
+
+  } else {
+  // If user does not specify qualityfilter parameter, then only read size selection (using the minlen and maxlen params specified in the nextflow.config file) will be performed on the fastq file specified in the index file
+
+  READPROCESSING(read_size_selection_ch)
+  if (params.virreport_viral_db || params.virreport_ncbi) {
     DENOVO_ASSEMBLY(READPROCESSING.out.fastq)
     }
+  }
 
   if (params.virreport_viral_db) {
     BLASTN_VIRAL_DB_CAP3(DENOVO_ASSEMBLY.out.assembly_for_blastn)
