@@ -33,7 +33,7 @@ def main():
     run_data = pd.DataFrame()
     for fl in glob.glob("*_top_scoring_targets_with_cov_stats*.txt"):
         sample_data = pd.read_csv(fl, header=0, sep="\t",index_col=None)
-        run_data = run_data.append(sample_data)
+        run_data = run_data._append(sample_data)
     print (run_data)
     run_data["read size"] = readsize
     

@@ -1,13 +1,9 @@
 #!/usr/bin/env python
 import argparse
 import pandas as pd
-import numpy as np
 from functools import reduce
 import glob
-import re
-import os
 import time
-
 
 def main():
     parser = argparse.ArgumentParser(description="Derive a summary of the synthetic oligos count")
@@ -22,7 +18,7 @@ def main():
     
     for synthetic_oligo_count in glob.glob("*synthetic_oligos_stats.txt"):
         individual_df = pd.read_csv(synthetic_oligo_count, header=0,index_col=None,sep="\t")
-        df = df.append(individual_df, ignore_index=True)
+        df = df._append(individual_df, ignore_index=True)
     
     
 

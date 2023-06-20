@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import pandas as pd
-from functools import reduce
 import glob
 import matplotlib
 matplotlib.use('Agg')
@@ -17,7 +16,7 @@ for fl in glob.glob("*_read_length_dist.txt"):
     sample_data = pd.read_csv(fl, header=None, sep='\t',index_col=None)
     sample_data.columns = ["length", sample]
     if iterator == 0:
-        run_data = run_data.append(sample_data)
+        run_data = run_data._append(sample_data)
     else:
         run_data = pd.merge(run_data, sample_data, how="outer", on=["length"])
     iterator += 1

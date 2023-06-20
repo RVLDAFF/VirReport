@@ -50,7 +50,7 @@ def main():
                     qfiltered_reads = line.split("Reads written (passing filters): ")[1]
                     qfiltered_reads = re.sub(r' \(.*\)', '', qfiltered_reads).strip()
                     qfiltered_reads = int(re.sub(r',', '', qfiltered_reads).strip())
-        raw_read_counts_dict[sample].append(qfiltered_reads)
+        raw_read_counts_dict[sample]._append(qfiltered_reads)
         f.close()
 
     for fastp_out in glob.glob("*_fastp.json"):
@@ -76,10 +76,10 @@ def main():
                 elif string_to_search2 in line:
                     gc_content = float(line.split(":")[1].strip())
         f.close()
-        raw_read_counts_dict[sample].append(total_filtered_bases)
-        raw_read_counts_dict[sample].append(q20_bases)
-        raw_read_counts_dict[sample].append(q30_bases)
-        raw_read_counts_dict[sample].append(gc_content)
+        raw_read_counts_dict[sample]._append(total_filtered_bases)
+        raw_read_counts_dict[sample]._append(q20_bases)
+        raw_read_counts_dict[sample]._append(q30_bases)
+        raw_read_counts_dict[sample]._append(gc_content)
 
 
     for bowtie_blacklist_out in glob.glob("*_blacklist_filter.log"):
@@ -95,7 +95,7 @@ def main():
                     usable_source_reads = elements[1].strip()
                     usable_source_reads = int(re.sub(r' \(.*\)', '', usable_source_reads).strip())
         f.close()
-        raw_read_counts_dict[sample].append(usable_source_reads)
+        raw_read_counts_dict[sample]._append(usable_source_reads)
 
     for cutadapt_18_25_out in glob.glob("*_18-25nt_cutadapt.log"):
         usable_reads_18_25 = ()
@@ -110,7 +110,7 @@ def main():
                     usable_reads_18_25 = re.sub(r' \(.*\)', '', usable_reads_18_25).strip()
                     usable_reads_18_25 = int(re.sub(r',', '', usable_reads_18_25).strip())
         f.close()
-        raw_read_counts_dict[sample].append(usable_reads_18_25)
+        raw_read_counts_dict[sample]._append(usable_reads_18_25)
 
     for cutadapt_21_22_out in glob.glob("*_21-22nt_cutadapt.log"):
         usable_reads_21_22 = ()
@@ -125,7 +125,7 @@ def main():
                     usable_reads_21_22 = re.sub(r' \(.*\)', '', usable_reads_21_22).strip()
                     usable_reads_21_22 = int(re.sub(r',', '', usable_reads_21_22).strip())
         f.close()
-        raw_read_counts_dict[sample].append(usable_reads_21_22)
+        raw_read_counts_dict[sample]._append(usable_reads_21_22)
 
     for cutadapt_24_out in glob.glob("*_24nt_cutadapt.log"):
         usable_reads_24 = ()
@@ -140,7 +140,7 @@ def main():
                     usable_reads_24 = re.sub(r' \(.*\)', '', usable_reads_24).strip()
                     usable_reads_24 = int(re.sub(r',', '', usable_reads_24).strip())
         f.close()
-        raw_read_counts_dict[sample].append(usable_reads_24) 
+        raw_read_counts_dict[sample]._append(usable_reads_24) 
     
     run_data_df = pd.DataFrame([([k] + v) for k, v in raw_read_counts_dict.items()], columns=['Sample','raw_reads','umi_cleaned_reads', 'quality_filtered_reads_>_18bp', 'total_filtered_bases', 'q20_bases', 'q30_bases', 'percent_gc_content', 'informative_reads_reads', 'informative_reads_18-25_nt', 'informative_reads_21-22_nt', 'informative_reads_24_nt'])
     

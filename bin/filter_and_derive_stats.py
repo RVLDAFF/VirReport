@@ -166,7 +166,7 @@ def main():
             selected = raw_data[raw_data["qseqids"].str.contains(contig)]
             
             if len(selected) == 1:
-                filtered_data = filtered_data.append(selected)
+                filtered_data = filtered_data._append(selected)
             #If contigs hit to multiple viruses and viroids, choose best hit
             elif len(selected)>1:
                 print(selected)
@@ -174,7 +174,7 @@ def main():
                 Species_updated_list = selected["Species_updated"].tolist()
                 #This should accomodate several RNAs per virus spp.
                 if len(Species_updated_list) == 1:
-                    filtered_data = filtered_data.append(selected)
+                    filtered_data = filtered_data._append(selected)
                 # If there are several contigs, retain the top hit, remove 2ary hits
                 elif len(Species_updated_list) > 1:
                     topmatch = selected["naccs"].max()
@@ -182,12 +182,12 @@ def main():
                     # Check if there is a tie when selecting by max naccs:
                     Species_updated_list = selected["Species_updated"].tolist()
                     if len(Species_updated_list) == 1:
-                        filtered_data = filtered_data.append(selected)
+                        filtered_data = filtered_data._append(selected)
                     # If there is a tie, select next based on av-pidentity
                     else:
                         topmatch = selected["av-pident"].max()
                         selected = selected[selected["av-pident"] == topmatch]
-                        filtered_data = filtered_data.append(selected)
+                        filtered_data = filtered_data._append(selected)
                 
         filtered_data = filtered_data.drop_duplicates()
 

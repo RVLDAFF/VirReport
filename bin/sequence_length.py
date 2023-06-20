@@ -47,7 +47,7 @@ def main():
         contig_len_dic = {}
         for i in unique_list:
             ind_length = (list(counter.values())[list(counter.keys()).index(i)])
-            length_list.append(ind_length)
+            length_list._append(ind_length)
             contig_len_dic[i] = ind_length
         contig_string = ', '.join(map(str,unique_list))
 
@@ -66,17 +66,17 @@ def main():
                     contig_seq += next(f).strip()
 
             contig_seq = contig_seq.replace('"', '')
-        longest_contig_list.append(contig_seq)
+        longest_contig_list._append(contig_seq)
 
         sum_numbers = sum(length_list)
         max_length = max(length_list)
         min_length = min(length_list)
-        sum_list.append(sum_numbers)
-        full_length_list.append(sort_orders)
-        full_unique_list.append(contig_string)
-        max_list.append(max_length)
-        min_list.append(min_length)
-        contig_count_list.append(contig_count)
+        sum_list._append(sum_numbers)
+        full_length_list._append(sort_orders)
+        full_unique_list._append(contig_string)
+        max_list._append(max_length)
+        min_list._append(min_length)
+        contig_count_list._append(contig_count)
 
     raw_data['unique_contig_list'] = pd.Series(full_unique_list)
     raw_data['contig_ind_lengths'] = pd.Series(full_length_list)
