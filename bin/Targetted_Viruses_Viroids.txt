@@ -159,10 +159,7 @@ Citrus viroid IIb	Rutaceae
 Citrus viroid IIc	Rutaceae
 Citrus viroid III	Rutaceae
 Citrus viroid IIIa	Rutaceae
-Citrus viroid IIIa	Rutaceae
 Citrus viroid IIIb	Rutaceae
-Citrus viroid IIIb	Rutaceae
-Citrus viroid IIIc	Rutaceae
 Citrus viroid IIIc	Rutaceae
 Citrus viroid IV	Rutaceae
 Citrus viroid OS	Rutaceae
@@ -171,7 +168,7 @@ Citrus viroid VI	Rutaceae
 Citrus yellow mosaic badnavirus	Rutaceae
 Citrus yellow mosaic virus	Rutaceae
 Citrus yellow mottle virus	Rutaceae
-Citrus yellow vein clearing virus	Rutaceae
+Citrus yellow vein clearing virus	Vitis
 Cocksfoot mild mosaic panicovirus	Clonal grasses
 Cocksfoot mild mosaic virus	Clonal grasses
 Cocksfoot streak potyvirus	Clonal grasses
@@ -184,6 +181,7 @@ Cotton leaf curl Gezira virus	Hibiscus/Papaya
 Cotton leaf curl virus	Hibiscus/Papaya
 Cotton leafroll dwarf virus	Cotton
 Crinkly leaf virus	Rutaceae
+Cucumber necrosis virus Kiwifruit
 Cynodon chlorotic streak rhabdovirus	Clonal grasses
 Cynodon chlorotic streak virus	Clonal grasses
 Dasheen mosaic potyvirus	Taro
@@ -217,9 +215,9 @@ Gooseberry vein banding associated badnavirus	Ribes
 Gooseberry vein banding associated virus	Ribes
 Grapevine Ajinashika virus	Grapevines
 Grapevine Anatolian ringspot virus	Vitis
-Grapevine angular mosaic associated virus	Vitis
-Grapevine angular mosaic virus	Vitis
+Grapevine associated marafivirus Vitis
 Grapevine asteroid mosaic associated virus	Vitis
+Grapevine badnavirus 1 Vitis
 Grapevine berry inner necrosis virus	Vitis
 Grapevine Bulgarian latent virus	Vitis
 Grapevine chrome mosaic virus	Vitis
@@ -235,7 +233,7 @@ Grapevine Roditis leaf discolouration associated virus	Vitis
 Grapevine Roditis leaf discoloration associated virus	Vitis
 Grapevine Tunisian ringspot virus	Vitis
 Grapevine vein clearing virus	Vitis
-Grapevine virus B	Vitis
+Grapevine virus B	Vitis 
 Grapevine virus D	Vitis
 Grapevine virus E	Vitis
 Grapevine virus G	Vitis
@@ -262,6 +260,8 @@ Indian cassava mosaic begomovirus	Cassava
 Indian cassava mosaic virus	Cassava
 Indian peanut clump potyvirus	Clonal grasses
 Indian peanut clump virus	Clonal grasses
+Ipomoea crinkle leaf curl virus Sweet potato
+Ipomoea yellow vein virus Sweet potato
 Konjac mosaic virus	Taro
 Lupinus mosaic virus	Lupins
 Maize chlorotic mottle machlomovirus	Clonal grasses/Grains
@@ -313,6 +313,7 @@ Olive latent ringspot virus	Olives
 Olive latent virus 1	Olives
 Olive latent virus 2	Olives
 Olive latent virus 3	Olives
+Olive leaf mottling virus Olives
 Olive leaf yellowing associated closterovirus	Olives
 Olive leaf yellowing associated virus	Olives
 Olive mild mosaic necrovirus	Olives
@@ -343,7 +344,7 @@ Papaya ringspot potyvirus – Type P3	Papaya
 Papaya ringspot virus	Papaya
 Passiflora chlorosis potyvirus	Passionfruit
 Passiflora chlorosis virus	Passionfruit
-Passion fruit yellow mosaic virus	Passionfruit
+Passionfruit yellow mosaic virus	Passionfruit
 Passionfruit crinkle potyvirus	Passionfruit
 Passionfruit crinkle virus	Passionfruit
 Passionfruit ringspot potyvirus	Passionfruit
@@ -361,7 +362,6 @@ Pea early browning tobravirus	Legumes/Lupins
 Pea early browning virus	Legumes/Lupins
 Pea early browning virus	Legumes/Lupins
 Pea enation mosaic virus	Lupins
-Pea seed borne mosaic virus	Legumes
 Peach chlorotic leaf spot virus	Stonefruit
 Peach chlorotic mottle virus	Stonefruit
 Peach enation nepovirus	Stonefruit
@@ -374,9 +374,9 @@ Peach rosette mosaic nepovirus	Blueberry/Vitis/Stonefruit
 Peach rosette mosaic virus	Blueberry/Vitis/Stonefruit
 Peach virus D	Stonefruit
 Peanut bud necrosis virus	Peanuts
-Peanut clump furovirus	Grains/Peanuts
-Peanut clump pecluvirus	Grains/Peanuts
-Peanut clump virus	Grains/Sugarcane
+Peanut clump furovirus	Grains/Peanuts/Sugarcane
+Peanut clump pecluvirus	Grains/Peanuts/Sugarcane
+Peanut clump virus	Grains/Peanuts/Sugarcane
 Peanut stripe potyvirus	Lupins/Peanuts
 Peanut stripe virus	Lupins/Peanuts
 Peanut stunt cucumovirus	Lupins/Peanuts
@@ -418,6 +418,7 @@ Raspberry leaf curl virus Rubus
 Raspberry ringspot nepovirus	Ribes/Vitis/Stonefruit/Fragaria
 Raspberry ringspot virus	Ribes/Vitis/Stonefruit/Fragaria
 Raspberry vein chlorosis virus	Rubus
+Ribgrass mosaic virus Kiwifruit
 Rice black streaked dwarf fijivirus	Clonal grasses/Rice
 Rice black streaked dwarf virus	Clonal grasses/Rice
 Rice dwarf virus	Clonal grasses/Rice
@@ -460,24 +461,39 @@ Sunflower mosaic virus	Sunflower
 Sweet potato caulimovirus	Sweet potato
 Sweet potato chlorotic fleck virus	Sweet potato
 Sweet potato chlorotic stunt virus	Sweet potato
+Sweet potato feathery mottle virus Sweet potato
 Sweet potato latent virus	Sweet potato
 Sweet potato leaf curl virus	Sweet potato
+Sweet potato leaf curl Canary virus Sweet potato
+Sweet potato leaf curl China virus Sweet potato
+Sweet potato leaf curl Georgia virus Sweet potato
+Sweet potato leaf curl Guangxi virus Sweet potato
+Sweet potato leaf curl Henan virus Sweet potato
+Sweet potato leaf curl Hubei virus Sweet potato
+Sweet potato leaf curl Sao Paulo virus Sweet potato
+Sweet potato leaf curl Shandong virus Sweet potato
+Sweet potato leaf curl Sichuan virus 1 Sweet potato
+Sweet potato leaf curl Sichuan virus 2 Sweet potato
+Sweet potato leaf curl South Carolina virus Sweet potato
 Sweet potato leaf speckling virus	Sweet potato
 Sweet potato mild speckling virus	Sweet potato
 Sweet potato mild speckling virus C8	Sweet potato
+Sweet potato mild mottle virus Sweet potato
 Sweet potato ringspot virus	Sweet potato
 Sweet potato vein mosaic virus	Sweet potato
+Sweet potato vein clearing virus	Sweet potato
 Sweet potato virus	Sweet potato
 Sweet potato virus 2	Sweet potato
 Sweet potato virus C6	Sweet potato
 Sweet potato yellow dwarf virus	Sweet potato
+Sweet potato golden vein Korea virus Sweet potato
 Taro reovirus	Taro
 Taro vein chlorosis rhabdovirus	Taro
 Taro vein chlorosis virus	Taro
 Taro virus	Taro
 Tobacco necrosis alphanecrovirus	Vitis/Hops/Rubus/Stonefruit
 Tobacco necrosis virus	Vitis/Hops/Rubus/Stonefruit
-Tobacco necrosis virus A	Potato
+Tobacco necrosis virus A	Potato/Vitis
 Tobacco necrosis virus D	Potato/Fragaria
 Tomato black ring nepovirus	Ribes/Vitis/Lupins/Potato/Rubus/Stonefruit/Fragaria
 Tomato black ring virus	Ribes/Vitis/Lupins/Potato/Rubus/Stonefruit/Fragaria
@@ -489,19 +505,21 @@ Tomato leaf curl Albatinah begomovirus	Papaya
 Tomato leaf curl Albatinah virus	Papaya
 Tomato leaf curl New Delhi virus	Potato
 Tomato mottle Taino virus	Potato
+Tomato necrotic spot associated virus Kiwifruit
 Tomato ring spot virus	Blueberry/Ribes/Vitis/Pome/Rubus/Stonefruit/Fragaria/Pomegranate
 Tomato ringspot nepovirus	Blueberry/Ribes/Vitis/Pome/Rubus/Stonefruit/Fragaria/Pomegranate
 Tomato ringspot virus	Blueberry/Ribes/Vitis/Pome/Rubus/Stonefruit/Fragaria/Pomegranate
 Tomato yellow fruit ring virus	Potato
 Tomato yellow mosaic virus	Potato
-Tomato zonate spot tospovirus	Taro
-Tomato zonate spot virus	Taro
+Tomato zonate spot tospovirus	Taro/Kiwifruit
+Tomato zonate spot virus	Taro/Kiwifruit
 Tulare apple mosaic virus	Hazelnuts/Pome
+Turnip vein clearing virus Kiwifruit
 Wheat dwarf geminivirus A	Clonal grasses
 Wheat dwarf virus	Clonal grasses
 Wheat dwarf virus A	Clonal grasses
-Wheat soilbome mosaic furovirus	Clonal grasses
-Wheat soilbome mosaic virus	Clonal grasses
+Wheat soilborne mosaic furovirus	Clonal grasses
+Wheat soilborne mosaic virus	Clonal grasses
 Wheat yellow leaf closterovirus	Clonal grasses
 Wheat yellow leaf virus	Clonal grasses
 Wild potato mosaic virus	Potato
