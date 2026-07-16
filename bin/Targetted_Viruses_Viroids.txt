@@ -38,7 +38,7 @@ Barley stripe mosaic hordeivirus	Grains
 Barley stripe mosaic virus	Grains
 Barley yellow dwarf virus	Rice
 Bean common mosaic virus	Peanuts
-Beet curly top virus	Potato
+Beet curly top virus	Potato/Cannabis
 Bermuda grass etched line marafivirus	Clonal grasses
 Bermuda grass etched line virus	Clonal grasses
 Bidens mottle virus	Lupins
@@ -168,6 +168,7 @@ Citrus viroid VI	Rutaceae
 Citrus yellow mosaic badnavirus	Rutaceae
 Citrus yellow mosaic virus	Rutaceae
 Citrus yellow mottle virus	Rutaceae
+Citrus yellow-vein associated virus Cannabis
 Citrus yellow vein clearing virus	Vitis
 Cocksfoot mild mosaic panicovirus	Clonal grasses
 Cocksfoot mild mosaic virus	Clonal grasses
@@ -182,6 +183,7 @@ Cotton leaf curl virus	Hibiscus/Papaya
 Cotton leafroll dwarf virus	Cotton
 Crinkly leaf virus	Rutaceae
 Cucumber necrosis virus Kiwifruit
+Cucurbit chlorotic yellow virus Cannabis
 Cynodon chlorotic streak rhabdovirus	Clonal grasses
 Cynodon chlorotic streak virus	Clonal grasses
 Dasheen mosaic potyvirus	Taro
@@ -226,7 +228,7 @@ Grapevine fabavirus	Vitis
 Grapevine fanleaf virus	Vitis
 Grapevine leafroll associated virus 13	Vitis
 Grapevine leafroll associated virus 7	Vitis
-Grapevine line pattern virus	Vitis
+Grapevine line pattern virus	Vitis/Cannabis
 Grapevine red blotch associated virus	Vitis
 Grapevine red blotch virus	Vitis
 Grapevine Roditis leaf discolouration associated virus	Vitis
@@ -402,7 +404,7 @@ Potato virus M	Potato
 Potato virus S	Potato
 Potato virus S – Andean strain	Potato
 Potato virus V	Potato
-Potato virus Y	Potato
+Potato virus Y	Potato/Cannabis
 Potato yellow blotch virus	Potato
 Potato yellow dwarf nucleorhabdovirus	Potato
 Potato yellow dwarf virus	Potato
@@ -498,7 +500,7 @@ Tobacco necrosis virus D	Potato/Fragaria
 Tomato black ring nepovirus	Ribes/Vitis/Lupins/Potato/Rubus/Stonefruit/Fragaria
 Tomato black ring virus	Ribes/Vitis/Lupins/Potato/Rubus/Stonefruit/Fragaria
 Tomato bushy stunt tombusvirus	Pome/Stonefruit
-Tomato bushy stunt virus	Pome/Stonefruit
+Tomato bushy stunt virus	Pome/Stonefruit/Cannabis
 Tomato chlorosis virus	Potato
 Tomato chlorotic spot virus	Catharanthus roseus/Potato
 Tomato leaf curl Albatinah begomovirus	Papaya
